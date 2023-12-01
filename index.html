@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="API convertisseur de monnaie">
+    <link rel="stylesheet" href="https://unpkg.com/mvp.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css"> -->
+    <link rel="stylesheet" href="style.css">
+    <script src="currency.js" type="module" defer></script>
+    <script src="main.js" type="module" defer></script>
+    
+    <title>Convertisseur de monnaie</title>
+</head>
+
+<body>
+    
+    <h1>Convertisseur de monnaie</h1>
+
+    <form id="currencyConverterForm">
+        <label for="montant">Montant à convertir :</label>
+        <div class="montant">
+            <input type="number" id="amount" step="0.01" placeholder="Saisir un montant" required>
+            <select id="baseCurrency" required>
+                <option value="EUR">EUR - Euro</option>
+            </select>
+        </div>
+
+
+        <label for="targetCurrency">Devise ciblé :</label>
+        <select id="targetCurrency" required>
+            <option value="all">Toute les devises</option>
+            <option value="EUR">EUR - Euro</option>
+        </select>
+
+        <button type="button" onclick="convertCurrency()">Convertir</button>
+
+    </form>
+    <div id="error"></div>
+    <div id="result"></div>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1, form, #result {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+label, input, select, button {
+    margin-bottom: 10px;
+}
+
+.montant{
+    display: flex;
+    gap:10px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%; 
+    margin: 20px auto; 
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+#result {
+    max-height: 30%; 
+    overflow-y: auto;
+}
+
+#targetCurrency{
+    text-align: center;
+}
+
+#error{
+    color: red;
+}

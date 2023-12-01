@@ -23,6 +23,10 @@ L'interface comprend un formulaire permettant à l'utilisateur de saisir le mont
 
 ## Comment Utiliser
 
+- [Lien du site](https://dazzling-alpaca-83a22f.netlify.app/)
+
+OR
+
 1. Clonez ce repository sur votre machine.
 2. Ouvrez le fichier `index.html` dans un navigateur web.
 3. Remplissez le formulaire avec le montant, la devise de base et la devise cible.
